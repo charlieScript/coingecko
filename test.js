@@ -3,10 +3,10 @@ const coins = [
   'bitcoin',
   'ethereum',
   'tether',
-  'litecoin',
   'bnb',
-  'tron',
   'dogecoin',
+  'tron',
+  'litecoin',
 ];
 const btc = document.querySelector('div')
 fetch(
@@ -16,6 +16,7 @@ fetch(
   .then((res) => {
     data.push(...res);
     const t = data.filter((f) => coins.includes(f.name.toLowerCase()));
+    console.log(t)
     btc.textContent = t[0].current_price
     btc.textContent = t[1].current_price
     btc.textContent = t[2].current_price
