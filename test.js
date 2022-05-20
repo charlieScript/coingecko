@@ -19,7 +19,6 @@ let btcPrice = 0;
 const ethleft = document.querySelector('.ethleft');
 const ethAmount = document.querySelector('.ethAmount').textContent;
 const ethTotal = document.querySelector('.ethTotal');
-let ethPrice = 0;
 
 const usdtleft = document.querySelector('.usdtleft');
 const usdtAmount = document.querySelector('.usdtAmount').textContent;
